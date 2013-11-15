@@ -3,7 +3,7 @@ if (window.location.href === 'http://derpthebass.com/code-lounge/') $('.under-co
 
 x = 0;
 animateAvatar = function() {
-	$('.animated-avatar').css('background-position-x', x+'px');
+	$('.animated-avatar').css('background-position', x+'px 0');
 	if (x == 1650) x = 150; else x += 150;
 };
 
@@ -19,11 +19,10 @@ function pluginHoverOut(){
 }
 
 function resizeWindow(){
-	$('.song-info').css('right', $(window).width() - 1200 + 'px');
+	$('.song-info').css('right', $(window).width() - 1050 + 'px');
 }
 
 $(window).resize(resizeWindow);
 resizeWindow();
 $('.plug-in').hover(pluginHoverIn, pluginHoverOut);
-
 })
