@@ -1,0 +1,145 @@
+body {
+	color: #FFF;
+	font-family: Open Sans;
+}
+.header-lower {
+	position: absolute;
+	height: 180px;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow-x: hidden;
+}
+.header-upper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: #121212;
+	box-shadow: 0 0 15px #000;
+	z-index: 1;
+}
+.outer-menu {
+	position: absolute;
+	background: #121212;
+	left: 0;
+	right: 0;
+	top: 210px;
+	height: 50px;
+	box-shadow: 0 0 15px #000;
+	z-index: 10;
+}
+.header-dj {
+	background: url(avatars/warrior2Front.png);
+	background-position-x: 0;
+	height: 150px;	
+	width: 150px;
+	position: absolute;
+	margin: auto;
+	top: -10px;
+	left: 10px;
+	z-index: 2;
+}
+.dj-info {
+	position: absolute;
+	left: 33px;
+	font-size: 20px;
+}
+.current-dj {
+	color: #6295CC;
+}
+.now-playing {
+	color: #6295CC;
+}
+.song-info {
+	position: absolute;
+	font-size: 20px;
+}
+.info-span {
+	font-family: Open Sans;
+	font-size: 22px;
+	color: #FFF;
+}
+.preview {
+	float: right;
+	z-index: 20;
+}
+.icon {	
+	background: url(images/plugIcons.png);
+	position: absolute;
+}
+.icon-note {
+	background-position: 0 0;
+	height: 30px;
+	width: 30px; 
+}
+.icon-dj {
+	background-position: -280px 0;
+	height: 30px;
+	width: 30px;
+}
+.song-info-icon {
+	left: -32px;
+}
+.dj-info-icon {
+	left: -32px;
+}
+.plug-in {
+	height: 100px;
+	width: 100px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 70px;
+	text-align: center;
+	top: 10px;
+	left: 40%;
+	position: absolute;
+	border: solid 5px #121212;
+}
+.marquee {
+	background: url(images/plugmarquee.png) repeat bottom;
+	height: 180px;
+	-webkit-animation: marquee 60s linear infinite;
+	-ms-animation: marquee 60s linear infinite;
+	animation: marquee 60s linear infinite;
+}
+.plug-in-span {
+	position: absolute;
+	display: none;
+	font-size: 30px;
+	top: 120px;
+	left: 40%;
+}
+.unplugged {
+	background: url(images/unplugged.png);
+}
+.plugged {
+	background: url(images/plugged.png);
+}
+.plug {
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+.under-construction {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+	color: rgba(206, 206, 206, 0.3);
+	font-size: 140px;
+	height: 160px;
+	width: 1290px;
+	display: none;
+}
+@keyframes 'marquee' {
+ 	0% { margin-left: 0px; } 100% { margin-right: -1920px; }
+}
+@-webkit-keyframes 'marquee' { 
+	0% { margin-left: 0px; } 100% { margin-right: -1920px; }
+}
+@-ms-keyframes 'marquee' { 
+	0% { margin-left: 0px; } 100% { margin-right: -1920px; }
+}
